@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .title {
+                font-size:  24px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title">Logo</div>
+        <div>
+            <div> Latest Blog</div>
+            <div> Calendar</div>
+        </div>
+
+        <div>
+            <form method = POST>
+                <textarea name = "content"></textarea>
+                <input type = "submit"/>
+            </form>
+        </div>
+
+        <div class = 'entries'>
+            {% for entry in entries %}
+                <p>{{entry[1]}}</p>
+            {% endfor %}
+        </div>
+
+    </body>
+
+
+</html>
